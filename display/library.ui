@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library System</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #c7e3f1;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>201</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(126,197,227);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="book_btn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#book_btn{
+	background-color: rgb(255,255,255);
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#book_btn:hover{
+	background-color: rgb(255,255,255,210);
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#book_btn:pressed{
+	background-color: rgb(255,255,255,210);
+	padding-top: 5px;
+	padding-left: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Book status</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="access_btn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>380</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#access_btn{
+	background-color: rgb(255,255,255);
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#access_btn:hover{
+	background-color: rgb(255,255,255,210);
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#access_btn:pressed{
+	background-color: rgb(255,255,255,210);
+	padding-top: 5px;
+	padding-left: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Access Management</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="show_table">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>130</y>
+      <width>511</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="rowCount">
+     <number>0</number>
+    </property>
+    <property name="columnCount">
+     <number>0</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>150</number>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="borrowed_btn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#borrowed_btn{
+	background-color: rgb(255,255,255);
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#borrowed_btn:hover{
+	background-color: rgb(255,255,255,210);
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#borrowed_btn:pressed{
+	background-color: rgb(255,255,255,210);
+	padding-top: 5px;
+	padding-left: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Borrowed book</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_btn">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>490</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#back_btn{
+	background-color: rgba(7, 255, 120, 1); 
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#back_btn:hover{
+	background-color: rgba(7, 255, 17, 1);
+	border-radius: 20px;
+	color: black;
+}
+QPushButton#back_btn:pressed{
+	background-color: rgba(7, 255, 17, 1);
+	padding-top: 5px;
+	padding-left: 5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 33, 255, 1);
+color: white;
+</string>
+    </property>
+    <property name="text">
+     <string>           MENU</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>60</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 33, 255, 1);
+color: white;
+</string>
+    </property>
+    <property name="text">
+     <string>                                               DISPLAY</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
